@@ -1,0 +1,18 @@
+Title : Division by zero Error observed in divide function
+Description: 
+	The function performs the division of two parameters (a and b) if one of two parameter is not 0. In this case, the function doesn't handle the case where one of the parameter is 0 and in result the program was crash unexpectedly.
+
+Pre-Condition:
+	The divide function exist in the source code : def divide (a,b)
+
+Steps to reproduced:
+	1. Call the divide function in the main code block
+	2. Execute the main code in the terminal
+
+Expected behavior:
+	The program should return a meaningful error message when one of the parameter is 0  (E.g : raise ValueError) and the program should not crashed
+
+Actual behavior:
+	ZeroDivisionError: division by zero crash observed in the terminal
+
+Severity level : High
